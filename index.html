@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Pet Services</title>
+    
+</head>
+<body>
+
+<header>
+    <img src="bg1.png" alt="Whiskers Logo">
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main id="home">
+    <div class="maintext">
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
+        <h1>Welcome to Whiskers</h1>
+        <p>Trusted pet care services for your furry friends.</p>
+        <div>
+            <button type="button"><span></span>Be our Client</button>
+            <button type="button"><span></span>Be a Pet Sitter</button>
+        </div>
+        
+    </div>
+</main>
+
+
+<div id="clientForm" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('clientForm')">&times;</span>
+        <h2>Be Our Client</h2>
+        <form action="#" method="POST" class="modal-form">
+            <label for="clientName">Name:</label>
+            <input type="text" id="clientName" name="clientName" required>
+
+            <label for="clientEmail">Email:</label>
+            <input type="email" id="clientEmail" name="clientEmail" required>
+
+            <label for="clientPhone">Phone:</label>
+            <input type="tel" id="clientPhone" name="clientPhone" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<div id="sitterForm" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('sitterForm')">&times;</span>
+        <h2>Be a Pet Sitter</h2>
+        <form action="#" method="POST" class="modal-form">
+            <label for="sitterName">Name:</label>
+            <input type="text" id="sitterName" name="sitterName" required>
+
+            <label for="sitterEmail">Email:</label>
+            <input type="email" id="sitterEmail" name="sitterEmail" required>
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience" name="experience" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service">
+            <img src="grooming.jpg" alt="Pet Grooming" class="service-image">
+            <div class="service-text">
+                <h3>Pet Grooming</h3>
+                <p>Give your furry friend the pampering they deserve! Our full grooming service includes a relaxing bath, a stylish trim, 
+                nail care, and more. We’ll leave your pet looking fabulous and feeling fresh, ready to strut their stuff.</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="sitting.jpg" alt="Pet Sitting" class="service-image">
+            <div class="service-text">
+                <h3>Pet Sitting</h3>
+                <p>Enjoy peace of mind while you're away with our reliable pet sitting services. Whether it's feeding, playing, or simply 
+                keeping your pet company, we ensure they’re cared for with love and attention, just like you would.</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="walking.png" alt="Pet Walking" class="service-image">
+            <div class="service-text">
+                <h3>Pet Walking</h3>
+                <p>Let your dog stretch their legs and enjoy the outdoors with our daily dog walking service. We make sure your pup stays active, 
+                healthy, and happy with tailored walks designed to meet their energy level and personality.</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="overnight.jpg" alt="Overnight Care" class="service-image">
+            <div class="service-text">
+                <h3>Overnight Care</h3>
+                <p>Your pet’s comfort and safety are our top priorities during overnight stays. Whether it’s a cozy bed, lots of cuddles, 
+                or their favorite treats, we create a home-away-from-home experience for your beloved pet.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="about">
+    <h2>About Us</h2>
+
+    <p>At Whiskers, we believe pets are family. That’s why we’re dedicated to providing the highest level of care for your furry companions. 
+    Whether it’s grooming, sitting, walking, or overnight care, we’re here to make life easier for both you and your pet.</p>
+
+    <p>Our team is passionate about animals and brings experience, love, and attention to every tail wag and purr. 
+    We take the time to get to know each pet, understanding their unique personalities and needs. 
+    Your pet’s happiness and safety are our top priorities.</p>
+
+    <p>When you choose Whiskers, you’re not just getting a service—you’re joining a community of pet lovers who want the best for their
+    four-legged friends. Let us help keep your pets happy, healthy, and loved while you enjoy peace of mind.</p>
+
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+        <form action="#" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</section>
+
+<footer>
+        <p>&copy; 2024 Whiskers</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="twitter-icon.png" alt="Twitter" class="social-icon">
+            </a>
+        </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
